@@ -1,0 +1,130 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #FEFAE0; /* Light background */
+    color: #283618; /* Main text color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #606C38; /* Header background */
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FEFAE0; /* White text for links */
+    font-weight: bold;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #DDDA15E; /* Dropdown background */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #283618; /* Dark background for hero */
+    color: #FEFAE0; /* White text */
+    padding: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #BC6C25; /* Button in accent color */
+    color: #FEFAE0; /* Button text color */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Insurance Services Section */
+.insurance-services {
+    background-color: #606C38; /* Background for insurance section */
+    color: #FEFAE0; /* Light text */
+    padding: 50px;
+    text-align: center;
+}
+
+.insurance-services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.insurance-services p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.insurance-item {
+    background-color: #FEFAE0; /* Card background */
+    color: #283618; /* Darker text for readability */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.insurance-item h3 {
+    font-size: 1.5em;
+    color: #BC6C25; /* Accent color for subheadings */
+}
+
+.insurance-item p {
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #283618;
+    color: #FEFAE0;
+    padding: 10px;
+    text-align: center;    
+}

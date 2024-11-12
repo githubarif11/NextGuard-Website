@@ -1,0 +1,343 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f2f6;
+    color: #27187e;
+}
+
+header {
+    background-color: #27187e;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1f2f6;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff8600;
+}
+
+nav .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #758bfd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav li:hover .dropdown {
+    display: block;
+    color: #ff8600;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #758bfd;
+    color: #f1f2f6;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #ff8600;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #27187e;
+    color: #f1f2f6;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    background-color: #f1f2f6; /* Light background color */
+}
+
+.about-content {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space out the text and image */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px; /* Space between text and image */
+}
+
+.about-text h2 {
+    color: #27187e; /* Dark blue for the heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #666; /* Gray for the description text */
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%; /* Responsive image */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+
+.services-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f1f2f6;
+}
+
+.service {
+    text-align: center;
+    width: 220px;
+}
+
+.service i {
+    font-size: 50px;
+    color: #27187e;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    background-color: #ff8600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #27187e;
+    color: #f1f2f6;
+}
+
+.section {
+    padding: 50px 20px;
+    background-color: #f1f2f6; /* Light background for contrast */
+}
+
+
+
+/* Services Section */
+#services {
+    background-color: #f1f2f6; /* Light background color for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    color: #27187e; /* Dark blue for the heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between service cards */
+}
+
+.service {
+    background-color: #ffffff; /* White background for service cards */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 250px; /* Fixed width for uniformity */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.service i {
+    font-size: 2em; /* Icon size */
+    color: #ff8600; /* Accent color for icons */
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    color: #27187e; /* Dark blue for service titles */
+    margin: 10px 0;
+}
+
+.service p {
+    color: #666; /* Gray for the description text */
+}
+
+
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #758bfd; /* Soft blue for buttons */
+    color: #fff; /* White text */
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-secondary:hover {
+    background-color: #27187e; /* Darker blue on hover */
+}
+
+
+.contact {
+    background-color: #758bfd; /* Primary color for the contact section */
+    color: white; /* Text color for better visibility */
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff8600; /* A contrasting color for the button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #27187e; /* Darker shade for hover effect */
+}
+
+
+
+
+footer {
+    background-color: #27187e;
+    color: #f1f2f6;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #f1f2f6;
+    font-size: 24px;
+}
+
+/* Responsive Mobile Navigation */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #f1f2f6;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #27187e;
+        position: absolute;
+        top: 70px; /* Adjust depending on header height */
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav .dropdown {
+        position: static; /* Dropdown inside mobile menu */
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack the about section content */
+    }
+
+    .services-grid {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center;
+    }
+
+    .service {
+        width: 100%; /* Full width for services */
+        margin-bottom: 20px;
+    }
+}

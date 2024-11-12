@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #E1E5F2; /* Light Background */
+    color: #1B4965; /* Dark Text Color */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1B4965; /* Dark Blue Header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #CAEEFF; /* Light Blue for Link Text */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #62B6CB; /* Teal Background on Hover */
+    color: #FFFFFF; /* White Text on Hover */
+    display: block;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #5FA8D3; /* Teal Dropdown Background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+nav li {
+    position: relative;
+}
+
+nav li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    color: #FFFFFF; /* White Text */
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #62B6CB; /* Teal Background on Hover */
+}
+
+/* Split Section */
+.split-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #CAEEFF; /* Light Blue for Split Background */
+    color: #1B4965;
+}
+
+.split-left {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.split-left h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.split-left h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.split-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.split-left ul li {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.split-left ul li i {
+    color: #1F7A8C; /* Teal for Icons */
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #1F7A8C; /* Teal Button */
+    color: #FFFFFF; /* White Text on Button */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Right Split Section (Image) */
+.split-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.split-right img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1B4965; /* Dark Blue for Footer */
+    color: #CAEEFF; /* Light Blue Text */
+    padding: 10px;
+    text-align: center;
+}
